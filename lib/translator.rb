@@ -6,7 +6,7 @@ def load_library(file_path)
   lib = YAML.load_file(file_path)
   dictionary = {}
   lib.each_value do |term, symbols|
-    
+    binding.pry
     dictionary[symbols[0]] = symbols[1]
   end 
   dictionary
